@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="Style.css">
+
+  <title>BLACKPINK | Member</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="banner_head">
+        <h1>BLACKPINK</h1>
+      </div>
+      
+      <div class="header_nav">
+        <nav>
+            <ul class="header_nav_content">
+                <li><a href="Index.html">MAIN</a></li>
+                <li><a href="Discography.html">DISCOGRAPHY</a></li>
+                <li><a href="Events.html">EVENTS</a></li>
+            </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main_content">
+    <div class="container">
+
+      <!--Member Detail -->
+      <section class="member_detail_page">
+        <div class="member_detail_header">
+          <div class="member_detail_image_large" id="memberMainImage">
+            <!--<span id="memberNameLarge">MEMBER NAME</span>-->
+          </div>
+          <div class="member_basic_info">
+            <h2 id="memberName" class="member_name_title">MEMBER NAME</h2>
+            <p id="memberRealName"><strong>Real Name:</strong> </p>
+            <p id="memberRole"><strong>Position:</strong> </p>
+            <p id="memberBirthday"><strong>Birthday:</strong> </p>
+            <p id="memberNationality"><strong>Nationality:</strong> </p>
+            <p id="memberHeight"><strong>Height:</strong> </p>
+          </div>
+        </div>
+
+        <div class="member_about_section">
+          <h3 class="subsection_title">ABOUT</h3>
+          <p id="memberAbout" class="about_text"></p>
+        </div>
+
+        <div class="member_gallery_section">
+          <h3 class="subsection_title">GALLERY</h3>
+          <div class="gallery_grid">
+            <div class="gallery_item" id="galleryImg1"></div>
+            <div class="gallery_item" id="galleryImg2"></div>
+            <div class="gallery_item" id="galleryImg3"></div>
+            <div class="gallery_item" id="galleryImg4"></div>
+            <div class="gallery_item" id="galleryImg5"></div>
+            <div class="gallery_item" id="galleryImg6"></div>
+            <div class="gallery_item" id="galleryImg7"></div>
+            <div class="gallery_item" id="galleryImg8"></div>
+          </div>
+        </div>
+
+        <div class="member_clips_section">
+          <h3 class="subsection_title">MUSIC VIDEOS</h3>
+          <div class="clips_grid_large">
+            <a href="#" id="videoLink1" class="clip_item_link" target="_blank">
+              <div class="clip_item">
+                <div class="video_thumbnail" id="videoThumb1">
+                  <div class="play_button_overlay">
+                    <i class="fab fa-youtube"></i>
+                  </div>
+                </div>
+                <p class="clip_title" id="clipTitle1">Performance Video</p>
+              </div>
+            </a>
+            
+            <a href="#" id="videoLink2" class="clip_item_link" target="_blank">
+              <div class="clip_item">
+                <div class="video_thumbnail" id="videoThumb2">
+                  <div class="play_button_overlay">
+                    <i class="fab fa-youtube"></i>
+                  </div>
+                </div>
+                <p class="clip_title" id="clipTitle2">Solo Stage</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="back_button_container">
+          <a href="Index.html" class="back_button">
+            <i class="fas fa-arrow-left"></i> Back to Members
+          </a>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+<!--Footer-->
+    <footer class="footer">
+        <div class="footer_container">
+            <p class="footer_title">© 2025 | BLACKPINK Fan Archive</p>
+            <p class="footer_disclaimer">Fan-made tribute • Not affiliated with YG Entertainment</p>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+    <script>
+      window.onload = function() {
+        loadMemberData();
+      };
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="Style.css">
+
+  <title>BLACKPINK | Album</title>
+</head>
+
+<body>
+<!--Header-->
+  <header class="header">
+    <div class="container">
+      <div class="banner_head">
+        <h1>BLACKPINK</h1>
+      </div>
+      
+      <div class="header_nav">
+        <nav>
+            <ul class="header_nav_content">
+                <li><a href="Index.html">MAIN</a></li>
+                <li><a href="Discography.html" class="active">DISCOGRAPHY</a></li>
+                <li><a href="Events.html">EVENTS</a></li>
+            </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+<!--Main Content-->
+  <main class="main_content">
+    <div class="container">
+
+      <!--Album Detail Section-->
+      <section class="album_detail_page">
+        <div class="album_detail_container">
+          <div class="album_detail_left">
+            <div class="album_detail_cover" id="albumCoverDetail">
+              <span id="albumTitleCover">ALBUM COVER</span>
+            </div>
+          </div>
+          
+          <div class="album_detail_right">
+            <h2 class="album_detail_title" id="albumTitle">ALBUM TITLE</h2>
+            
+            <div class="album_info_section">
+              <h4 class="info_subtitle">INFO</h4>
+              <p id="albumReleaseDate"><strong>Release Date:</strong> </p>
+              <p id="albumLabel"><strong>Label:</strong> </p>
+              <p id="albumGenre"><strong>Genre:</strong> </p>
+              <p id="albumLanguage"><strong>Language:</strong> </p>
+              <p id="albumTracks"><strong>Total Tracks:</strong> </p>
+              <p class="album_description" id="albumDescription"></p>
+            </div>
+
+            <div class="tracklist_section">
+              <h4 class="info_subtitle">TRACKLIST</h4>
+              <ol class="tracklist" id="albumTracklist">
+              </ol>
+            </div>
+
+            <div class="listening_platforms">
+                <h4 class="info_subtitle">LISTEN NOW</h4>
+                <div class="platform_buttons">
+                    <a id="spotifyLink" href="#" target="_blank" class="platform_btn">
+                    <i class="fab fa-spotify"></i>
+                    Spotify
+                    </a>
+                    <a id="youtubeLink" href="#" target="_blank" class="platform_btn">
+                    <i class="fab fa-youtube"></i>
+                    YouTube Music
+                    </a>
+                </div>
+        
+            </div>
+          </div>
+        <div class="back_button_container">
+          <a href="Discography.html" class="back_button">
+            <i class="fas fa-arrow-left"></i> Back to Albums
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+<!--Footer-->
+    <footer class="footer">
+        <div class="footer_container">
+            <p class="footer_title">© 2025 | BLACKPINK Fan Archive</p>
+            <p class="footer_disclaimer">Fan-made tribute • Not affiliated with YG Entertainment</p>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+    <script>
+      // Load album data when page loads
+      window.onload = function() {
+        loadAlbumData();
+      };
+    </script>
+</body>
+</html>

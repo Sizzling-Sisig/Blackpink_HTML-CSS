@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="Style.css">
+
+  <title>BLACKPINK | Discography</title>
+</head>
+
+<body>
+<!--Header-->
+  <header class="header">
+    <div class="container">
+      <div class="banner_head">
+        <h1>BLACKPINK</h1>
+      </div>
+      
+      <div class="header_nav">
+        <nav>
+            <ul class="header_nav_content">
+                <li><a href="Index.html">MAIN</a></li>
+                <li><a href="Discography.html" class="active">DISCOGRAPHY</a></li>
+                <li><a href="Events.html">EVENTS</a></li>
+            </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+<!--Main Content-->
+  <main class="main_content">
+    <div class="container">
+
+      <!--Studio Albums-->
+      <section class="albums_section">
+        <h2 class="section_title">STUDIO ALBUMS</h2>
+        <div class="albums_grid">
+          
+          <div class="album_card" onclick="goToAlbumPage('the-album')" data-album="the-album">
+            <div class="album_cover" style="background-image: url('BLACKPINK_PHOTOS/Album_TheAlbum.jpg');">
+            </div>
+            <div class="album_info">
+              <h3>THE ALBUM</h3>
+              <p class="album_date">October 2, 2020</p>
+              <p class="album_type">Studio Album</p>
+            </div>
+          </div>
+
+          <div class="album_card" onclick="goToAlbumPage('born-pink')" data-album="born-pink">
+            <div class="album_cover" style="background-image: url('BLACKPINK_PHOTOS/Album_BornPink.jpg');">
+            </div>
+            <div class="album_info">
+              <h3>BORN PINK</h3>
+              <p class="album_date">September 16, 2022</p>
+              <p class="album_type">Studio Album</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!--Extended Plays (EPs)-->
+      <section class="albums_section">
+        <h2 class="section_title">EXTENDED PLAYS</h2>
+        <div class="albums_grid">
+          
+          <div class="album_card" onclick="goToAlbumPage('square-up')" data-album="square-up">
+            <div class="album_cover" style="background-image: url('BLACKPINK_PHOTOS/Album_SquareUp.jpg');">
+            </div>
+            <div class="album_info">
+              <h3>SQUARE UP</h3>
+              <p class="album_date">June 15, 2018</p>
+              <p class="album_type">Extended Play</p>
+            </div>
+          </div>
+
+          <div class="album_card" onclick="goToAlbumPage('kill-this-love')" data-album="kill-this-love">
+            <div class="album_cover" style="background-image: url('BLACKPINK_PHOTOS/Album_KillThisLove.jpg');">
+            </div>
+            <div class="album_info">
+              <h3>KILL THIS LOVE</h3>
+              <p class="album_date">April 5, 2019</p>
+              <p class="album_type">Extended Play</p>
+            </div>
+          </div>
+
+          <div class="album_card" onclick="goToAlbumPage('blackpink')" data-album="blackpink">
+            <div class="album_cover" style="background-image: url('BLACKPINK_PHOTOS/Album_BlackPink.jpg');">
+            </div>
+            <div class="album_info">
+              <h3>BLACKPINK</h3>
+              <p class="album_date">August 30, 2017</p>
+              <p class="album_type">Extended Play (Japan)</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!--Single Albums-->
+      <section class="albums_section">
+        <h2 class="section_title">SINGLE ALBUMS</h2>
+        <div class="albums_grid">
+          
+          <div class="album_card" onclick="goToAlbumPage('square-one')" data-album="square-one">
+            <div class="album_cover" style="background-image: url('BLACKPINK_PHOTOS/Album_SquareOne.jpg');">
+            </div>
+            <div class="album_info">
+              <h3>SQUARE ONE</h3>
+              <p class="album_date">August 8, 2016</p>
+              <p class="album_type">Single Album</p>
+            </div>
+          </div>
+
+          <div class="album_card" onclick="goToAlbumPage('square-two')" data-album="square-two">
+            <div class="album_cover" style="background-image: url('BLACKPINK_PHOTOS/Album_SquareTwo.jpg');">
+            </div>
+            <div class="album_info">
+              <h3>SQUARE TWO</h3>
+              <p class="album_date">November 1, 2016</p>
+              <p class="album_type">Single Album</p>
+            </div>
+          </div>
+
+          <div class="album_card" onclick="goToAlbumPage('as-if-its-your-last')" data-album="as-if-its-your-last">
+            <div class="album_cover" style="background-image: url('BLACKPINK_PHOTOS/Album_AsIFYoureLast.jpg');">
+            </div>
+            <div class="album_info">
+              <h3>AS IF IT'S YOUR LAST</h3>
+              <p class="album_date">June 22, 2017</p>
+              <p class="album_type">Single Album</p>
+            </div>
+          </div>
+
+          <div class="album_card" onclick="goToAlbumPage('ddu-du-ddu-du')" data-album="ddu-du-ddu-du">
+            <div class="album_cover" style="background-image: url('BLACKPINK_PHOTOS/Album_DuDuDu.png');">
+            </div>
+            <div class="album_info">
+              <h3>DDU-DU DDU-DU</h3>
+              <p class="album_date">December 5, 2018</p>
+              <p class="album_type">Single Album (Japan)</p>
+            </div>
+          </div>
+
+          <div class="album_card" onclick="goToAlbumPage('the-girls')" data-album="the-girls">
+            <div class="album_cover" style="background-image: url('BLACKPINK_PHOTOS/Album_The_Girls.png');">
+
+            </div>
+            <div class="album_info">
+              <h3>THE GIRLS</h3>
+              <p class="album_date">October 23, 2024</p>
+              <p class="album_type">Single Album</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!--Compilation-->
+      <section class="albums_section">
+        <h2 class="section_title">COMPILATION ALBUM</h2>
+        <div class="albums_grid">
+          
+          <div class="album_card" onclick="goToAlbumPage('blackpink-in-your-area')" data-album="blackpink-in-your-area">
+            <div class="album_cover" style="background-image: url('BLACKPINK_PHOTOS/Album_BlackPinkInYourArea.jpg');">
+
+            </div>
+            <div class="album_info">
+              <h3>BLACKPINK IN YOUR AREA</h3>
+              <p class="album_date">December 5, 2018</p>
+              <p class="album_type">Compilation Album (Japan)</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!--Live Albums-->
+      <section class="albums_section">
+        <h2 class="section_title">LIVE ALBUMS</h2>
+        <div class="albums_grid">
+          
+          <div class="album_card" onclick="goToAlbumPage('arena-tour-2018')" data-album="arena-tour-2018">
+            <div class="album_cover" style="background-image: url('BLACKPINK_PHOTOS/Album_ArenaTour.jpg');">
+
+            </div>
+            <div class="album_info">
+              <h3>BLACKPINK ARENA TOUR 2018</h3>
+              <p class="album_date">May 22, 2019</p>
+              <p class="album_type">Live Album</p>
+            </div>
+          </div>
+
+          <div class="album_card" onclick="goToAlbumPage('kyocera-dome')" data-album="kyocera-dome">
+            <div class="album_cover" style="background-image: url('BLACKPINK_PHOTOS/Album_Osaka.jpg');">
+            </div>
+            <div class="album_info">
+              <h3>2019-2020 IN YOUR AREA TOKYO DOME</h3>
+              <p class="album_date">March 4, 2020</p>
+              <p class="album_type">Live Album</p>
+            </div>
+          </div>
+
+          <div class="album_card" onclick="goToAlbumPage('live-cd')" data-album="live-cd">
+            <div class="album_cover" style="background-image: url('BLACKPINK_PHOTOS/Album_WorldTour1819.jpg');">
+            </div>
+            <div class="album_info">
+              <h3>WORLD TOUR LIVE CD</h3>
+              <p class="album_date">December 30, 2020</p>
+              <p class="album_type">Live Album</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+<!--Footer-->
+    <footer class="footer">
+        <div class="footer_container">
+            <p class="footer_title">© 2025 | BLACKPINK Fan Archive</p>
+            <p class="footer_disclaimer">Fan-made tribute • Not affiliated with YG Entertainment</p>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
